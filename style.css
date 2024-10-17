@@ -1,0 +1,115 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('background.jpg'); /* Path to your image */
+    background-size: cover;  /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#sudoku-board {
+    margin: 0 auto 20px;
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+td {
+    border: 1px solid #d1d1d1;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Thicker borders for 3x3 sub-boxes */
+td:nth-child(3), td:nth-child(6) {
+    border-right: 2px solid black;  /* Adjusted to 2px for balance */
+}
+
+tr:nth-child(4) td, tr:nth-child(7) td {
+    border-bottom: 2px solid black;  /* Adjusted to 2px for balance */
+}
+
+table {
+    border: 2px solid black;  /* Border around the entire grid */
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: #333;
+}
+
+input:focus {
+    outline: none;
+    background-color: #e7f5ff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button#reset-btn {
+    background-color: #f44336;
+}
+
+button#reset-btn:hover {
+    background-color: #e53935;
+}
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #f0ecec;
+    text-align: ;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
